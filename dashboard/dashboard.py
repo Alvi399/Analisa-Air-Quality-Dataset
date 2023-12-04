@@ -76,7 +76,7 @@ ax.tick_params(axis = 'y',labelsize= 20)
 ax.tick_params(axis ='x',labelsize = 15)
 st.pyplot(fig)
 
-st.subheader("Tingkat plousi pm 2.5 pada semua wilayah")
+st.subheader("Tingkat polusi pm 2.5 pada semua wilayah")
 fig, ax = plt.subplots(nrows=1,ncols=2,figsize = (35,15))
 colors = ["#90CAF9", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3"]
 sns.barplot(data=pm25_df.head(5),x="pm2.5",y="station",palette=colors,ax=ax[0])
